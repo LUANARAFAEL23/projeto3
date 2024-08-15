@@ -1,0 +1,108 @@
+Skip to Play Sketch
+Cookies
+The p5.js Editor uses cookies. Some are essential to the website functionality and allow you to manage an account and preferences. Others are not essential—they are used for analytics and allow us to learn more about our community. We never sell this data or use it for advertising. You can decide which cookies you would like to allow, and learn more in our Privacy Policy.
+
+
+Allow All
+
+Allow Essential
+File
+Edit
+Sketch
+Help
+English
+Hello, luli23!
+
+
+
+Auto-refresh
+
+projeto 3
+by luli23
+
+
+Sketch Files
+
+
+i
+nde
+x
+.html
+
+s
+ketc
+h
+.js
+
+
+s
+tyl
+e
+.css
+
+sketch.js
+Saved: 3 months ago
+1
+let cor;
+2
+let circuloY;
+3
+let circuloX;
+4
+​
+5
+function setup() {
+6
+  createCanvas(1000, 800);
+7
+  background("rgb(255,255,255)");
+8
+  cor=color(random(0,255),random(0,255),random(0,255));
+9
+  circuloY = [random(height),random(height),random(height)];
+10
+  circuloX = [0,0,0];
+11
+}
+12
+function draw() {
+13
+  fill(cor);
+14
+  for(let quantos in circuloX) {
+15
+    circle(circuloX[quantos],circuloY[quantos],100);
+16
+    circuloX[quantos]+= random(0,3);
+17
+    circuloY[quantos]+= random(-3,3);
+18
+    
+19
+    if (circuloX[quantos] >= width) {
+20
+       circuloX[quantos] =0;
+21
+      circuloY[quantos]=random(height);
+22
+  }
+23
+}
+24
+​
+25
+  
+26
+  if (mouseIsPressed){
+27
+    
+28
+  cor=color(random(0,255),random(0,255),random(0,255));
+There are no lint messages
+Current lineline 1
+
+Console
+Clear
+
+​
+Preview
